@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: cursive;
 }
 
 /* Header */
@@ -14,13 +15,8 @@ header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  background-color: white;
 
-}
-
-div {
-  border: 1px solid black;
-  margin: 5px;
-  overflow: hidden;
 }
 
 .logo {
@@ -59,15 +55,24 @@ main {
 }
 
 .image-content {
-
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .narrative {
-
+  font-size: 17px;
 }
 
 .text-content {
-
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
 
 /* First Column */
@@ -80,17 +85,27 @@ main {
 }
 
 .stories {
-
+display: flex;
+justify-content: space-between;
 }
 
 .story {
-
+display: flex;
+flex-direction: column;
+width: 300px;
+justify-content: space-between;
 }
 
 .image-main {
   height: 300px;
   width: 629px;
-  background-image: url("../images/img-story-main.png")
+  background-image: url("../images/img-story-main.png");
+}
+
+.image-main h1 {
+  font-size: 40px;
+  text-align: left;
+  padding: 30px;
 }
 
 .image-2 {
@@ -116,6 +131,10 @@ main {
   background-image: url("../images/img-story-1.png")
 }
 
+.top-headline {
+  margin-top: -4px;
+}
+
 /* Third Column */
 .small {
   width: 240px;
@@ -131,9 +150,21 @@ nav.news-bite a{
   color: black;
   text-decoration: none;
   padding: 10px 30px;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+}
+
+nav.news-bite a:hover {
+  background-color: DimGray;
+  color: white;
 }
 
 h3 {
   text-align: center;
   margin: 16px 0px 41px 0px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Times New Roman"
 }
